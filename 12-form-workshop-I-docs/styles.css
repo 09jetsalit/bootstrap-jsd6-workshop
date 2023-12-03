@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.background-left {
+    width: 100%;
+    height: auto;
+}
