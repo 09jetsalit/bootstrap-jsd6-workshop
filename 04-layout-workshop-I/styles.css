@@ -1,0 +1,28 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.row {
+    /* border: 1px solid   red; */
+}
+
+.box {
+    background: lightseagreen;
+    min-height: 75px;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  body {
+    /* background-color: wheat; */
+    margin-top: 40px;
+    /* padding: 0 !important; */
+    height: 100vh;
+  }
+
+  /* * {
+    background-color: black;
+    color: white;
+  } */
