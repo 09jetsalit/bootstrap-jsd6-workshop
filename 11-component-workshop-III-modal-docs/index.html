@@ -1,30 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout-P3</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- #2 Seperate PoperJS and BootstrapJS-->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="container"></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout-P3</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- #2 Seperate PoperJS and BootstrapJS-->
+  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="container  d-flex pt-3 m-2 bg-black">
+    <div class="card m-3" style="width: 18rem;">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1701127871438-af582cdd8c55?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modal คลิกที่ไหนของหน้าจอก็ออก</h5>
+        <p class="card-text"> Modal คลิกที่ไหนของหน้าจอก็ออก</p>
+        <!-- Button trigger modal -->
+        <div class="container  d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            คลิกที่นี้
+          </button></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                กดตรงไหนก็ออก
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- finish box 1------------------------------ -->
+
+    <div class="card m-3" style="width: 18rem;">
+      <img
+        src="https://images.unsplash.com/photo-1682685797828-d3b2561deef4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Modal lock ต้องเลือกตัวเลือกเท่านั้น</h5>
+        <p class="card-text"> Modal lock ต้องเลือกตัวเลือกเท่านั้น</p>
+        <!-- Button trigger modal -->
+        <div class="container  d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            คลิกที่นี้
+          </button></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ต้องเลือกตัวเลือกเท่านั้นถึงจะออกได้
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ok im Ready</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- finish box-2---------------------------- -->
+
+    <div class="card m-3" style="width: 18rem;">
+      <img
+        src="https://images.unsplash.com/photo-1682685796775-020fd5dcd7d1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">แบบ scroll</h5>
+        <p class="card-text"> แบบ scroll</p>
+        <!-- Button trigger modal -->
+        <div class="container  d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scroll">
+            คลิกที่นี้
+          </button></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="scroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">แบบ scroll</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>แบบ scroll Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, temporibus. Quod
+                  mollitia facere dolorum doloribus ullam accusantium aperiam. Odit tempore quis doloribus voluptas
+                  eaque, rerum fuga pariatur consectetur officia quasi dolorem, beatae ad? Iste et necessitatibus,
+                  dignissimos fugit est voluptatibus labore commodi ad doloribus, in harum ipsa quae nesciunt? Provident
+                  quibusdam quidem ratione quod ipsum aliquam molestias enim qui hic, fuga illum! Doloribus dignissimos
+                  adipisci eos quos velit esse officia iusto officiis excepturi voluptas necessitatibus ullam qui est
+                  atque rerum, eaque fuga tempore nisi deleniti, asperiores sequi, pariatur quidem architecto! Illum,
+                  quibusdam hic tenetur rerum quam voluptas doloribus nam itaque iste dicta mollitia ipsum impedit
+                  consectetur? Eligendi dolores, at similique nulla accusamus odit id totam rerum quas magnam
+                  perferendis? Nobis quibusdam aspernatur fuga autem numquam dolorem, blanditiis expedita sint soluta
+                  tempore officia ad illum corrupti accusamus nemo dignissimos reiciendis ipsum minus corporis
+                  voluptate. Nobis culpa exercitationem quasi dicta, ratione odit ab totam recusandae? Perferendis
+                  minima adipisci et impedit recusandae labore consectetur. Sequi, explicabo tempore! Explicabo, est
+                  animi! Facilis, labore! Aspernatur saepe voluptatibus et a repudiandae aut veniam, esse consequatur
+                  officia facere nihil modi, iste, fugit voluptas pariatur voluptate possimus repellat ipsa laudantium
+                  aliquam. Nihil at alias commodi laborum quos temporibus.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- finish box 3------------------------------------ -->
+
+  </div>
+</body>
+
 </html>
